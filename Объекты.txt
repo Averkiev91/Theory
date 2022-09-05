@@ -1,0 +1,91 @@
+Практически все сущности в JS - объекты.
+Объект - это набор свойств "Имя: значение".
+Объект - это тип значений, также тип переменных.
+!!! Объект это ссылочный тип. !!!
+
+1)Объекты
+Создание и удаление свойств объектов
+
+const myCity = {
+	city: 'Moscow'
+}
+
+myCity.popular = true // добавление новых свойств объекта(точечная запись)
+mycity['popular'] = true // добавление новых свойств объекта с использованием скобок
+
+myCity.country = 'Russia' // добавление новых свойств объекта(точечная запись)
+const countryPropertyName = 'country'
+myCity[countryPropertyName] = 'Russia' // добавление новых свойств объекта с использованием скобок
+
+console.log(myCity)
+// {city: 'Moscow', popular: true, country: 'Russia'}
+
+delete myCity.country // удаление свойств
+
+console.log(myCity)
+// {city: 'Moscow', popular: true}
+
+2)Объекты
+Вложенные свойства
+
+const myCity = {
+	city: 'Moscow',
+	info: {
+		isPopular: true, //вложенный объект
+		country: 'Russia'
+	}
+}
+
+console.log(myCity.info.isPopular) //точечная запись
+// true
+
+console.log(myCity.info['isPopular']) // скобочная запись
+// true
+
+3)Объекты
+Сокращенный формат записи свойств
+
+const name = 'Maxim'
+const age = 31
+
+const userProfile = {
+	name, //сокращенные свойства рекомендуется размещать в начале объекта
+	age,
+	hasSignedAgreement: false
+}
+
+4)Объекты
+Методы объекта
+
+Метод - свойсто объекта, значение которого - функция
+
+const myCity = {
+	city: 'Moscow',
+	cityGreeting: function() {
+		console.log('Greetings!!!')
+	}
+}
+
+myCity.cityGreeting() // вызов метода
+
+// Greetings!!!
+
+mycity.city // доступ к значению свойства
+myCity.cityGreeting() // вызов метода
+
+5)Объекты
+Копирование объекта
+
+const person = {
+	name: 'Bob',
+	age: 25
+}
+
+const person2 = {...person} //Оператор разделения объекта на свойства (Берем объект person и разделяем на свойства name и age и эти свойства добавляем новому объекту person2 - так мы избегаем мутации(изменения свойств) объекта person)
+
+person2.name = 'Alice'
+
+console.log(person.name) // Bob
+console.log(person2.name) // Alice
+
+const person2 = JSON.parse(JSON.stringify(person)) // ссылки на вложенные объекты не сохраняются (самый лучший способ копирования объекта)
