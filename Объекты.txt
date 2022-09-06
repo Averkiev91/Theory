@@ -3,7 +3,7 @@
 Объект - это тип значений, также тип переменных.
 !!! Объект это ссылочный тип. !!!
 
-### 1)Объекты
+1)Объекты
 Создание и удаление свойств объектов
 
 const myCity = {
@@ -25,7 +25,7 @@ delete myCity.country // удаление свойств
 console.log(myCity)
 // {city: 'Moscow', popular: true}
 
-### 2)Объекты
+2)Объекты
 Вложенные свойства
 
 const myCity = {
@@ -42,7 +42,7 @@ console.log(myCity.info.isPopular) //точечная запись
 console.log(myCity.info['isPopular']) // скобочная запись
 // true
 
-### 3)Объекты
+3)Объекты
 Сокращенный формат записи свойств
 
 const name = 'Maxim'
@@ -54,7 +54,7 @@ const userProfile = {
 	hasSignedAgreement: false
 }
 
-### 4)Объекты
+4)Объекты
 Методы объекта
 
 Метод - свойсто объекта, значение которого - функция
@@ -73,7 +73,7 @@ myCity.cityGreeting() // вызов метода
 mycity.city // доступ к значению свойства
 myCity.cityGreeting() // вызов метода
 
-### 5)Объекты
+5)Объекты
 Копирование объекта
 
 const person = {
