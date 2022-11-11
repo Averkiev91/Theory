@@ -56,5 +56,22 @@ class HelloWorld extends Component {
         return <h1>Hello World!</h1>
     }
 }
-`Обязательны метод render определяет то, что подлежит рендерингу.`
+Обязательны метод render определяет то, что подлежит рендерингу.
 ```
+
+### Javascript Syntax Extension (JSX)
+*Синтаксическая надстройка над JS.*
+
+```javascript
+return (
+    <div>
+        <h1>JSX в React</h1>
+        <p>JSX похож на HTML</p>
+        <Footer text={text} />
+    </div>
+)
+```
+
+**Одно из правил React:**
+- h1, p, div - встроенные компоненты (буква в нижнем регистре - встроенный)
+- Footer - пользовательский компонент (заглавная буква - пользовательский)
