@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1920px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.vanilla-js {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.app {
+    text-align: center;
+}
+.app__btn {
+    color: #232323;
+    background: transparent;
+    border: 1px solid #232323;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .3em;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.app__btn:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: #32D4E2;
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+.app__btn:hover:before {
+    transform: translate(4px, 4px);
+}
+
+.button-2 {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #232323;
+}
+.button span {
+    position: relative;
+}
+.button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    background: #C4F1FF;
+    transition: .3s ease-in-out;
+}
+.button:hover:before {
+    width: 100%;
+}
