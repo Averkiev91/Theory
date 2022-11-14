@@ -4,4 +4,4 @@
 
 ### Результат посмотреть можно здесь:
 
-[Vanilla app.js](http://n92604gi.beget.tech/01-vanilla-js/)
+[Vanilla react-app.js](http://n92604gi.beget.tech/01-vanilla-js/)
