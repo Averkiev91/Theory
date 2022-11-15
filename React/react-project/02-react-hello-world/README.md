@@ -1,5 +1,9 @@
 # React Hello World
 
+## Ссылки для подключения библиотек React, React DOM.
+https://unpkg.com/react@18/umd/react.development.js
+https://unpkg.com/react-dom@18/umd/react-dom.development.js
+
 ## Добавление h1 с помощью React.
 - ```const helloWorldHeading = React.createElement('h1', null, 'Hello from React')``` - С помощью объекта React создаем новую компоненту, используя метод createElement.
 - ```const container = document.querySelector('.react-app')``` - - Мы нашли html элемент с классом react-app, присвоили его переменной container.
