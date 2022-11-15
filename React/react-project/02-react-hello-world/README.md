@@ -14,3 +14,5 @@
 ## Сравнение результата с React и без него:
 - helloWorldHeading - Объект javascript. У объекта есть type (тип) и props (свойства).
 - vanillaJsHeading - Просто html элемент.
+
+![img.png](img.png)

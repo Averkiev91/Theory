@@ -1,4 +1,5 @@
 const helloWorldHeading = React.createElement('h1', null, 'Hello from React')
+console.log(helloWorldHeading)
 const container = document.querySelector('.react-app')
 const root = ReactDOM.createRoot(container)
 root.render(helloWorldHeading)
