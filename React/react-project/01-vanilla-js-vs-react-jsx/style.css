@@ -4,16 +4,19 @@
     box-sizing: border-box;
 }
 .container {
-    max-width: 1920px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1920px;
 }
 .vanilla-js {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 .app {
-    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .app__btn {
     color: #232323;
@@ -41,20 +44,16 @@
 .app__btn:hover:before {
     transform: translate(4px, 4px);
 }
-
-.button-2 {
-    text-decoration: none;
+.button {
     position: relative;
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 15px;
-    font-family: monospace;
-    font-size: 16px;
-    color: #232323;
-}
-.button span {
-    position: relative;
+    background: transparent;
+    border: 1px solid #232323;
+    font-size: 14px;
+    letter-spacing: .3em;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
 }
 .button:before {
     content: "";
@@ -65,6 +64,7 @@
     height: 100%;
     background: #C4F1FF;
     transition: .3s ease-in-out;
+    z-index: -1;
 }
 .button:hover:before {
     width: 100%;
