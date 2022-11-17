@@ -15,7 +15,7 @@ const ReactBtn = (props) => {
             <button
                 className={isActive ? classesList : initialClassesList}
                 onClick ={onButtonClick}>
-                {isActive ? buttonText : initialButtonText}
+                {isActive ? initialButtonText : buttonText}
             </button>
         </div>
     )
